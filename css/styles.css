@@ -1,0 +1,135 @@
+:root {
+    --header-footer-color-text: #000000;
+    --first-title-color-text: #333333;
+    --second-title-color-text: #3A3A3A;
+    --first-color-text: #666666;
+    --accent-color: #B88E2F;
+    --second-color-text: #898989;
+    --third-color-text: #616161;
+    --forth-color-text: #B0B0B0;
+    --footer-color-text: #9F9F9F;
+    --first-background-color: #FFFFFF;
+    --second-background-color: #FFF3E3;
+    --third-background-color: #F4F5F7;
+    --forth-background-color: #FCF8F3;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: var(--first-background-color);
+    color: var(--first-title-color-text);
+}
+
+.container {
+    max-width: 1236px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+/* header */
+
+.header__content {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--header-footer-color-text);
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.header__logo .logo__text {
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700;
+    font-size: 34px;
+    margin-left: 5px;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    max-width: 750px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    max-width: 430px;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 -20px;
+}
+
+.menu__item {
+    margin: 0 20px;
+}
+
+.menu__item:last-child {
+    margin-right: 50px;
+}
+
+.menu__link {
+    font-size: 16px;
+}
+.btn__list {
+    display: flex;
+    align-items: center;
+    max-width: 247px;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 -10px;
+}
+.btn__item {
+    margin: 0 10px;
+}
+
+.btn {
+}
+.btn__account,
+.btn__search,
+.btn__heart,
+.btn__cart {
+
+    display: flex;
+    align-items: center;
+}
+.btn__search {
+}
+.btn__heart {
+}
+.btn__cart {
+}
+
+/* hero */
+.hero {
+}
+.container {
+}
+.hero__content {
+}
+.subtitle {
+}
+.hero__subtitle {
+}
+.title {
+}
+.hero__title {
+}
+.text {
+}
+.hero__text {
+}
+.btn {
+}
+.hero__btn {
+}
