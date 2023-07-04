@@ -81,6 +81,7 @@ body {
 .menu__link {
     font-size: 16px;
 }
+
 .btn__list {
     display: flex;
     align-items: center;
@@ -93,43 +94,67 @@ body {
     margin: 0 10px;
 }
 
-.btn {
-}
 .btn__account,
 .btn__search,
 .btn__heart,
 .btn__cart {
-
     display: flex;
     align-items: center;
 }
-.btn__search {
-}
-.btn__heart {
-}
-.btn__cart {
-}
+
 
 /* hero */
 .hero {
+    background-image: url(../images/hero-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 153px;
+    height: 750px;
 }
 .container {
 }
 .hero__content {
+    position: relative;
+}
+.hero__text-block {
+    max-width: 550px;
+    position: absolute;
+    right: 0;
+    padding: 60px 40px 35px;
+    background-color: var(--second-background-color);
+    border-radius: 10px;
 }
 .subtitle {
 }
 .hero__subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 4px;
 }
 .title {
 }
 .hero__title {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--accent-color);
+    margin-bottom: 17px;
 }
 .text {
 }
 .hero__text {
+    font-style: 18px;
+    line-height: 1.33;
+    margin-bottom: 46px;
 }
 .btn {
 }
 .hero__btn {
+    padding: 25px 72px;
+    background-color: var(--accent-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--first-background-color);
 }
