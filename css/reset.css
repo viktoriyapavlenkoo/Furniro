@@ -17,7 +17,8 @@ a {
 button {
     cursor: pointer;
     background-color: transparent;
-    border: none;
-
-    
+    border: none;    
+}
+address {
+    font-style: normal;
 }

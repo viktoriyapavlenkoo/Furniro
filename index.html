@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
 </head>
 <body>
     <header class="header">
@@ -183,6 +185,79 @@
                 </div>
             </div>
         </section>
+        <section class="examples">
+            <div class="container">
+                <div class="examples__content">
+                    <div class="examples__text-block">
+                        <h2 class="title section__title examples__title">50+ Beautiful rooms inspiration</h2>
+                        <p class="text examples__text">Our designer already made a lot of beautiful prototipe of rooms that inspire you</p>
+                        <button class="btn examples__btn">Explore More</button>
+                    </div>
+                    <div class="swiper examples__swiper-block">
+                        <div class="swiper-wrapper examples__list">
+                            <div class="swiper-slide examples__item">
+                                <div class="examples__img-block">
+                                    <img src="./images/examples-img-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide examples__item">
+                                <div class="examples__img-block">
+                                    <img src="./images/examples-img-2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide examples__item">
+                                <div class="examples__img-block">
+                                    <img src="./images/examples-img-3.png" alt="">
+                                </div>
+                            </div>
+                            ...
+                        </div>
+                        <div class="swiper-pagination examples__pagination"></div>
+                        <div class="swiper-button-prev examples__button-prev"></div>
+                        <div class="swiper-button-next examples__button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__blocks">
+                    <div class="footer__block footer__first-block">
+                        <a href="index.html" class="logo footer__logo">Funiro.</a>
+                        <address class="address">400 University Drive Suite 200 Coral Gables,<br> FL 33134 USA</address>
+                    </div>
+                    <div class="footer__block footer__second-block">
+                        <h3 class="footer__title">Links</h3>
+                        <ul class="menu footer__menu">
+                            <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Shop</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">About</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__block footer__third-block">
+                        <h3 class="footer__title">Help</h3>
+                        <ul class="help footer__help">
+                            <li class="help__item"><a href="" class="help__link">Payment Options</a></li>
+                            <li class="help__item"><a href="" class="help__link">Returns</a></li>
+                            <li class="help__item"><a href="" class="help__link">Privacy Policies</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__block footer__forth-block">
+                        <h3 class="footer__title">Newsletter</h3>
+                         <form action="" method="post" class="form footer__form">
+                            <input type="email" name="email" placeholder="Enter Your Email Address" class="input footer__input">
+                            <button type="submit" class="btn footer__btn">Subscribe</button>
+                        </form> 
+                    </div>
+                </div>
+                <p class="text footer__text">2023 furino. All rights reverved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
