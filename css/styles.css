@@ -32,10 +32,16 @@ body {
 
 
 /* header */
+.header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: var(--first-background-color);
+}
 
 .header__content {
     display: flex;
-    height: 100px;
+    height: 80px;
     align-items: center;
     justify-content: space-between;
     color: var(--header-footer-color-text);
@@ -109,8 +115,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 153px;
-    height: 750px;
+    height: 100vh;
 }
 
 .hero__content {
@@ -118,6 +123,7 @@ body {
 }
 
 .hero__text-block {
+    top: 180px;
     max-width: 550px;
     position: absolute;
     right: 0;
@@ -195,6 +201,7 @@ body {
 }
 
 .range__img-block {
+    display: block;
     position: relative;
     padding: 0 0 110% 0;
 
@@ -231,6 +238,7 @@ body {
 }
 
 .products__item {
+    position: relative;
     flex: 25%;
     margin: 0 16px;
     max-width: 277px;
@@ -260,13 +268,12 @@ body {
     font-weight: 600;
     line-height: 1.2;
     color: var(--second-title-color-text);
-    margin-bottom: 8px;
 }
 
 .products__item-description {
     line-height: 1.5;
     color: var(--second-color-text);
-    margin-bottom: 8px;
+    margin: 8px 0;
 }
 
 .products__item-price {
@@ -284,6 +291,54 @@ body {
     line-height: 1.5;
     color: var(--accent-color);
     margin: 0 auto 81px;
+}
+/* products hover */
+
+.products__item-hover {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 67%;
+    background-color: rgba(58, 58, 58, 0.72);
+    z-index: 2;
+    color: var(--first-background-color);
+    padding: 0 17px;
+}
+
+.products__item:hover .products__item-hover  {
+    display: flex;
+}
+
+.products__hover-btn {
+    width: 200px;
+    margin: 0 auto 28px;
+    padding: 12px 55px;
+    background-color: var(--first-background-color);
+    color: var(--accent-color);
+}
+
+.products__hover-list {
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -5px;
+}
+
+.products__hover-item {
+    flex-direction: 33%;
+    margin: 0 5px;
+}
+
+.hover__btn {
+    display: flex;
+    align-items: center;
+}
+
+.hover__btn img {
+    margin-right: 2px;
 }
 
 /* examples */
