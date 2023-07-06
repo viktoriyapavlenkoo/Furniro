@@ -22,8 +22,8 @@
                 </a>
                 <nav class="nav">
                     <ul class="menu">
-                        <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Shop</a></li>
+                        <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+                        <li class="menu__item"><a href="shop.html" class="menu__link">Shop</a></li>
                         <li class="menu__item"><a href="#" class="menu__link">About</a></li>
                         <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
                     </ul>
@@ -59,16 +59,36 @@
                 <div class="page-hero__content">
                     <h1 class="title  page-hero__title">Shop</h1>
                     <div class="page-hero__path">
-                        <a href="" class="page-hero__link">Home</a>
+                        <a href="index.html" class="page-hero__link">Home</a>
                         <p class="page-hero__text">Shop</p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="shop-products">
-            <div class="container">
-                <div class="shop-products__content">
-                    <div class="shop-products__header"></div>
+            <div class="shop-products__header">
+                <div class="container">
+                    <div class="shop-products__header-content">
+                        <div class="filter-show__block">
+                            <div class="filter__block">
+                                <button class="btn filter__btn">
+                                    <img src="./images/shop/filter-icon.svg" alt="">
+                                </button>
+                                <p class="filter__text">Filter</p>
+                            </div>
+                            <p class="show__text">Showing 1–16 of 32 results</p>
+                        </div>
+                        <form action="" method="get" class="form show__form">
+                            <label for="show" class="show__label">Show</label>
+                            <input type="text" name="show" id="" value="16" class="show__input">
+                            <label for="sort" class="sort__label">Sort by</label>
+                            <input type="text" name="sort" id="" value="Default" class="sort__input">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="shop-products__content">
+                <div class="container">
                     <ul class="products__list">
                         <li class="products__item">
                                 <div class="products__img-block">
@@ -455,8 +475,13 @@
                         </div>
                     </li>
                     </ul>
-                    
-                </div>
+                    <div class="shop-products__buttons-block">
+                        <button class="shop-products__btn shop-products__btn_active">1</button>
+                        <button class="shop-products__btn">2</button>
+                        <button class="shop-products__btn">3</button>
+                        <button class="shop-products__btn shop-products__btn-next">Next</button>
+                    </div>
+                </div>     
             </div>
         </section>
     </main>
@@ -471,8 +496,8 @@
                     <div class="footer__block footer__second-block">
                         <h3 class="footer__title">Links</h3>
                         <ul class="menu footer__menu">
-                            <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Shop</a></li>
+                            <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+                            <li class="menu__item"><a href="shop.html" class="menu__link">Shop</a></li>
                             <li class="menu__item"><a href="#" class="menu__link">About</a></li>
                             <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
                         </ul>
