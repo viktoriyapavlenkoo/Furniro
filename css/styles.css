@@ -32,7 +32,7 @@ body {
 
 
 /* header */
-.header {
+.first-page__header {
     position: absolute;
     left: 0;
     right: 0;
@@ -495,3 +495,51 @@ body {
 .footer__text {
     margin-top: 35px;
 }
+
+/* SHOP-PAGE */
+
+/* page-hero */
+
+.page-hero {
+    background-image: url(../images/shop/shop-hero-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--header-footer-color-text);
+}
+
+.page-hero__content {
+    height: 316px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-hero__title {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.page-hero__path {
+    display: flex;
+}
+
+.page-hero__link {
+    display: flex;
+}
+
+.page-hero__link::after {
+    content: url(../images/shop/hero-arrow-icon.svg);
+    position: relative;
+    top: 2px;
+    left: 8px;
+}
+
+.page-hero__text {
+    font-weight: 300;
+    margin-left: 12px;
+}
+
+/* shop-products */
