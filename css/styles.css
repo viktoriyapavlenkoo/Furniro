@@ -1,4 +1,5 @@
 :root {
+/* color variebles */
     --header-footer-color-text: #000000;
     --first-title-color-text: #333333;
     --second-title-color-text: #3A3A3A;
@@ -13,13 +14,24 @@
     --third-background-color: #F4F5F7;
     --forth-background-color: #FCF8F3;
     --fifth-background-color: #F9F1E7;
+/* font-size variebles */
+    --small-text: 14px;
+    --medium-text: 16px;
+    --large-text: 20px;
+    --item-title: 24px;
+    --second-section-title: 32px;
+    --header-logo: 34px;
+    --first-section-title: 40px;
+    --page-hero-title: 48px;
+    --hero-title: 52px;
+
 }
 
 
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: var(--medium-text);
     background-color: var(--first-background-color);
     color: var(--first-title-color-text);
 }
@@ -57,7 +69,7 @@ body {
 .header__logo .logo__text {
     font-family: 'Montserrat', sans-serif; 
     font-weight: 700;
-    font-size: 34px;
+    font-size: var(--header-logo);
     margin-left: 5px;
 }
 .nav {
@@ -86,7 +98,7 @@ body {
 }
 
 .menu__link {
-    font-size: 16px;
+    font-size: var(--medium-text);
 }
 
 .btn__list {
@@ -134,14 +146,14 @@ body {
 }
 
 .hero__subtitle {
-    font-size: 16px;
+    font-size: var(--medium-text);
     font-weight: 600;
     letter-spacing: 3px;
     margin-bottom: 4px;
 }
 
 .hero__title {
-    font-size: 52px;
+    font-size: var(--hero-title);
     font-weight: 700;
     line-height: 1.25;
     color: var(--accent-color);
@@ -177,7 +189,7 @@ body {
 .section__title {
 }
 .range__title {
-    font-size: 32px;
+    font-size: var(--second-section-title);
     font-weight: 700;
     text-align: center;
     margin-top: 50px;
@@ -185,7 +197,7 @@ body {
 .text {
 }
 .range__text {
-    font-size: 20px;
+    font-size: var(--large-text);
     font-weight: 400;
     text-align: center;
     color: var(--first-color-text);
@@ -215,7 +227,7 @@ body {
 }
 .range__title-item {
     margin-top: 30px;
-    font-size: 24px;
+    font-size: var(--item-title);
     font-weight: 600;
     text-align: center;
 }
@@ -223,7 +235,7 @@ body {
 /* products */
 
 .products__title {
-    font-size: 40px;
+    font-size: var(--first-section-title);
     font-weight: 700;
     line-height: 1.2;
     color: var(--second-title-color-text);
@@ -265,7 +277,7 @@ body {
 }
 
 .products__item-title {
-    font-size: 24px;
+    font-size: var(--item-title);
     font-weight: 600;
     line-height: 1.2;
     color: var(--second-title-color-text);
@@ -278,7 +290,7 @@ body {
 }
 
 .products__item-price {
-    font-size: 20px;
+    font-size: var(--large-text);
     font-weight: 600;
     line-height: 1.5;
     color: var(--second-title-color-text);
@@ -365,7 +377,7 @@ body {
 .section__title {
 }
 .examples__title {
-    font-size: 40px;
+    font-size: var(--first-section-title);
     font-weight: 700;
     line-height: 1.2;
     color: var(--second-title-color-text);
@@ -442,7 +454,7 @@ body {
 }
 
 .footer__logo {
-    font-size: 24px;
+    font-size: var(--item-title);
     font-weight: 700;
 }
 
@@ -481,14 +493,14 @@ body {
 }
 
 .footer__input::placeholder {
-    font-size: 14px;
+    font-size: var(--small-text);
     font-weight: 400;
     color: var(--footer-color-text);
 
 }
 
 .footer__btn {
-    font-size: 14px;
+    font-size: var(--small-text);
     text-transform: uppercase;
     margin-left: 11px;
 }
@@ -517,7 +529,7 @@ body {
 }
 
 .page-hero__title {
-    font-size: 48px;
+    font-size: var(--page-hero-title);
     text-align: center;
     margin-bottom: 2px;
 }
@@ -576,7 +588,7 @@ body {
 .filter__text,
 .show__form label,
 .show__form input {
-    font-size: 20px;
+    font-size: var(--large-text);
     font-weight: 400;
 }
 .filter__text {
@@ -638,7 +650,7 @@ body {
     height: 60px;
     background-color: var(--fifth-background-color);  
     border-radius: 10px; 
-    font-size: 20px;
+    font-size: var(--large-text);
     font-weight: 400;
 }
 .shop-products__btn-next {
@@ -650,4 +662,36 @@ body {
 .shop-products__btn:focus {
     background-color: var(--accent-color);
     color: var(--first-background-color);
+}
+/* benefits */
+.benefits {
+    background-color: var(--fifth-background-color);
+}
+.container {
+}
+.benefits__content {
+}
+.benefits__list {
+    display: flex;
+    padding: 100px 0;
+    justify-content: space-between;
+    margin: 0 -15px;
+}
+.benefits__item {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+.benefits__img-block {
+    display: flex;
+    margin-right: 10px;
+}
+.benefits__item-title {
+    font-size: var(--large-text);
+    font-weight: 600;
+    line-height: 1.5;
+}
+.benefits__item-text {
+    line-height: 150%;
+    color: var(--second-color-text);
 }
